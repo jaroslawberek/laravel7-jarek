@@ -1,0 +1,59 @@
+.games-scores , card games-typs{
+    height: max-content ; 
+    .games-scores-body {
+        height: max-content ;
+        .game_item {
+            position: relative;
+            border-bottom: 1px solid #d9d9d9;
+            padding: 7px 0 7px;
+            min-height: 50px;
+            margin-bottom: 10px;
+        }
+    }
+} 
+.home_team {
+    .club-crest {
+        img {
+            width: 38px;
+            padding-right: 10px;
+        }
+    }
+
+    .club-name {
+        padding-right: 20px;
+        width: 150px;
+        font-size: 15px;
+        text-align: left;
+    }
+
+}
+
+.result {
+    .result-score {
+        padding-left: 1px;
+        padding-right: 1px;
+        margin: 0;
+        font-weight: bolder;
+    }
+}
+.away_team {
+    .club-crest {
+        img {
+            width: 38px;
+            padding-left: 10px;
+        }
+    }
+
+    .club-name {
+        padding-left: 20px;
+        width: 150px;
+        font-size: 15px;
+        text-align: right;
+        
+    }
+
+    .card games-typs{
+        width: 50%;
+    }
+
+}

@@ -1,0 +1,131 @@
+/* CheckBox custom - blue opcity + scale*/
+
+.check-label-custom {
+
+    text-align: center;
+
+    &:before {
+        position: absolute;
+        content: '';
+        left: 15px;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #c3cede;
+        background: #fff;
+        border-radius: 4px;
+        box-shadow: none;
+    }
+}
+
+.check-input-castom {
+    display: none;
+
+    &:checked+label:after,
+    &:not(:checked)+label:after {
+        position: absolute;
+        content: '';
+        width: 10px;
+        height: 10px;
+        background-color: #4273fa;
+        top: 5px;
+        left: 20px;
+        border-radius: 3px;
+        color: #4273fa;
+        transition: all .2s;
+    }
+
+    &:not(:checked)+label:after {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    &:checked+label:after {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.check-label-custom-enabled {
+    position: relative;
+
+    &:before {
+        left: -8px;
+    }
+}
+
+.check-input-castom-enabled {
+    display: none;
+
+    &:checked+label:after,
+    &:not(:checked)+label:after {
+
+        left: -3px;
+    }
+}
+
+.switch-content {
+    position: relative;
+    padding: 0;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+    border-radius: 50em;
+
+    .switch-3d-input-jarek {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+
+}
+
+.slider-switch-3d {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50em;
+    border: 1px solid #c8ced3;
+    background-color: #f0f3f5;
+
+}
+
+/* CheckBox Switch-3D*/
+
+.slider-switch-3d:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 2px;
+    bottom: 0px;
+    background-color: white;
+    ;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50em;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
+}
+
+.switch-3d-input-jarek:checked+.slider-switch-3d {
+    background-color: #60cf7d;
+    border-color: #3ac25e;
+}
+
+.switch-3d-input-jarek:focus+.slider-switch-3d {
+    border: 1px solid #c8ced3;
+    ;
+    border-color: #c8ced3;
+}
+
+.switch-3d-input-jarek:checked+.slider-switch-3d:before {
+    -webkit-transform: translateX(21px);
+    -ms-transform: translateX(21px);
+    transform: translateX(21px);
+}

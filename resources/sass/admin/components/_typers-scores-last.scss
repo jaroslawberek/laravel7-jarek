@@ -1,0 +1,22 @@
+.typers-scores-last{
+    height: max-content; 
+    .card-body{
+        table{
+            td, th{
+                vertical-align:-webkit-baseline-middle;
+                vertical-align: middle;
+                padding: 2px 10px;
+              } 
+              
+        }
+    }
+
+}
+.typer-avatar{
+    width: 35px;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+.td-typer{
+    width: 290px;
+}

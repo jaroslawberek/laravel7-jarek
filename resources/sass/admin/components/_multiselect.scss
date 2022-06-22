@@ -1,0 +1,33 @@
+.multiselect {
+    box-sizing: content-box;
+    display: block;
+    position: relative;
+    width: 100%;
+    min-height: 40px;
+    text-align: left;
+    color: #35495e;
+
+    .multiselect__select {
+        position: absolute;
+        width: 40px;
+        height: 38px;
+        right: 1px;
+        top: 1px;
+        padding: 4px 8px;
+        text-align: center;
+        transition: transform .2s ease;
+        .multiselect__select::before{
+            position: relative;
+        right: 0;
+        top: 65%;
+        color: #999;
+        margin-top: 4px;
+        border-color: #999 transparent transparent;
+        border-style: solid;
+        border-width: 5px 5px 0;
+        content: "";
+        }
+    }
+
+    
+}

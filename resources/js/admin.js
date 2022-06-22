@@ -1,0 +1,2 @@
+require("varibles");
+require("ajax");

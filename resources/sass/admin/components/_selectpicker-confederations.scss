@@ -1,0 +1,26 @@
+.selectpicker-confederations {
+    font: 15px;
+}
+
+.confederations-select-body {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1rem;
+
+    .confederations-select-icon {
+        margin-right: 10px;
+
+        .confederations-select-img {
+            width: 40px;
+        }
+    }
+
+    .confederations-select-name {
+        font-weight: bold;
+
+        .confederations-select-name-subtext {
+            font-size: xx-small;
+            margin-left: 13px;
+        }
+    }
+}

@@ -1,0 +1,94 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+
+
+
+/// Regular font family
+/// @type List
+$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
+
+
+
+/*Header-nav*/
+$header-nav-backgound-color: #f2f6fa !default;
+$header-nav-box-shadow: 0 10px 10px rgb(0 0 0 /10%);
+$header-nav-width: 100%;
+$header-nav-height: 80px;
+
+$top-accont-top-accont: 30px;
+
+$top-profil-img-width: 23%;
+$top-profil-img-border: solid 1px black;
+$top-profil-img-radius: 50%;
+$top-profil-name-font-size: 12px;
+$top-profil-name-font-weight: 800;
+$drop-down-profil-i-padding-right: 5px;
+/*left-menu*/
+$left-menu-background-color: #3b4348 !default;
+$left-menu-min-width: 230px;
+$left-menu-color: #f2f6fa !default;
+$left-menu-box-shadow-color: 0 20px 20px rgb(0 0 0 / 38%);
+
+$left-sidebar-header-img-width: 99%;
+
+$menu-nav-margin-left: 10px;
+
+$menu-padding-top: 20px;
+
+$menu-item-padding-top: 15px;
+$menu-item-icon-font-size: 20px;
+$menu-item-icon-margin-right: 13px;
+
+$menu-item-link-color: #f2f6fa;
+$menu-item-link-font-size: 15px;
+$menu-item-link-text-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+$menu-item-link-hover-background-color: rgb(0 0 0 / 38%);
+$menu-item-link-hover-color: #ff8522;
+
+$help-men-photo-img-radius: 50%;
+$help-men-photo-img-width: 30%;
+
+
+/*app*/
+$right-left: 0;
+$right-margin-left: 230px;
+$right-margin-top: 80px;
+$right-min-height: 100vh;
+
+
+/*app-contenet*/
+$content-page-padding: 15px;
+$content-page-background-color: #f2f6fa;
+$content-page-color: #3b4348;
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  'small': 320px,
+  'medium': 768px,
+  'large': 1024px,
+) !default;
+
+
+$loading-width: 40px;
+$loading-height: 40px;
+$loading-margin: 3px;
+$loading-border: 3px;
+
+
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'https://cdn.example.com/assets/';
+$base-url: '/assets/' !default;
+

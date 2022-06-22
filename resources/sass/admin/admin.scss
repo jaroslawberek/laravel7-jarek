@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+// 1. Configuration and helpers
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins';
+
+// 2. Vendors
+@import
+  'vendors/normalize';
+
+// 3. Base stuff
+@import
+  'base/reset',
+  'base/base',
+  'base/fonts',
+  'base/typography',
+  'base/helpers';
+
+// 4. Layout-related sections
+@import
+  'layout/header-nav',
+  'layout/footer',
+  'layout/left-menu',
+  'layout/app',
+  'layout/app-content';
+
+// 5. Components
+@import
+  'components/button',
+  'components/loading',
+  'components/typers-scores-last',
+  'components/games-scores',
+  'components/games-typs',
+  'components/multiselect',
+  'components/selectpicker-confederations' ,
+  'components/forms',
+  'components/checkbox-custom';
+
+
+// 6. Page-specific styles
+@import
+  'pages/home',
+  'pages/team-form';      
+
+// 7. Themes
+@import
+  'themes/default';

@@ -1,0 +1,82 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.header-nav {
+    background-color: $header-nav-backgound-color;
+    box-shadow: $header-nav-box-shadow;
+    left: 0;
+    padding-left: $left-menu-min-width + 5;
+    padding-right: 5px;
+    position: fixed;
+    top: 0;
+    width: $header-nav-width;
+    height: $header-nav-height;
+    z-index: 2;
+
+    .top-search {
+        position: relative;
+    }
+
+    .top-accont {
+        font-size: $top-accont-top-accont;
+
+        .top-message {
+            position: relative;
+
+        }
+
+        .top-alarms {
+            position: relative;
+
+        }
+
+        .top-profil {
+            position: relative;
+            background-color: transparent;
+            border: 0px;
+            outline: none;
+
+            img {
+                border-radius: $top-profil-img-radius;
+                border: $top-profil-img-border;
+                position: relative;
+                width: $top-profil-img-width;
+            }
+
+            .top-profil-name p {
+                padding: 0;
+                margin: 0;
+                font-size: $top-profil-name-font-size;
+            }
+
+            .top-profil-name p:nth-of-type(1) {
+                font-weight: $top-profil-name-font-weight;
+            }
+
+            // .expand {
+            //     position: relative;
+            //     padding: 0;
+            //     left: 10px;
+            //     margin: 0;
+
+            // }
+
+        }
+
+        .drop-down-profil {
+
+            // background-color:green
+            i {
+                padding-right: $drop-down-profil-i-padding-right;
+            }
+        }
+    }
+
+
+    /* .top-profil-name {
+        margin-left: 0;
+        padding: 0;
+    } */
+
+
+}
