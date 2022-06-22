@@ -6,7 +6,7 @@
     ]" :searchs="[
         ['name' => 'name',          'type' => 'text'],
         ['name' => 'active',        'type' => 'boolean'],
-        ['name' => 'last-modify',   'type' => 'text'],
+        ['name' => 'last-modify',   'type' => 'text'] ,
     ]">
         <tbody>
             @for ($i = 0; $i < 10; $i++)
