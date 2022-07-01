@@ -1,19 +1,27 @@
+<!-- Table component blade -->
+
 <div class="card-body">
     <form id="countries-table-form" class="table-form" action="test.php" method="GET">
         <table id="countries-table" class="table table-hover table-listing">
             <thead>
                 <tr>
                     @foreach ($headers as $header)
-                        <th class="w-50 text-left">
-                            <a href="#" class="sort-amount" target-sort-input="sort-{{ $header['sort'] }}"
-                                form="countries-table-form">
-                                <span>{{ $header['name'] }}</span>
-                                <span class="fa fa-sort-amount-asc ml-3 "></span>
-                            </a>
-                            <input type="hidden" name="sort-{{ $header['sort'] }}" id="sort-{{ $header['sort'] }}">
+                        <th class="w-50 {{ $header['classes'] }}">
+                            @isset($header['sort'])
+                                <a href="#" class="sort-amount" target-sort-input="sort-{{ $header['sort'] ?? '' }}"
+                                    form="countries-table-form">
+                                    <span>{{ $header['name'] }}</span>
+                                    <span class="fa fa-sort-amount-asc ml-3 "></span>
+                                </a>
+                                <input type="hidden" name="sort-{{ $header['sort'] }}" id="sort-{{ $header['sort'] }}">
+                            @endisset
+                            @empty($header['sort'])
+                            <span>{{ $header['name'] }}</span>
+                            @endempty
+
                         </th>
                     @endforeach
-
+                    
 
                     <th></th>
                 </tr>
@@ -33,8 +41,8 @@
                             @else
                                 <input type="{{ $search['type'] ?? '' }}"
                                     class="form-control form-control-sm search-input"
-                                    id="search-{{ $search['name'] ?? ''}}" form="countries-table-form" name="search-{{ $search['name']??''}}"
-                                    type="text">
+                                    id="search-{{ $search['name'] ?? '' }}" form="countries-table-form"
+                                    name="search-{{ $search['name'] ?? '' }}" type="text">
                             @endif
 
                         </th>
@@ -43,7 +51,9 @@
 
                 </tr>
             </thead>
-            {{$slot}}
+            <tbody>
+                {{ $slot }}
+            </tbody>
         </table>
     </form>
     <div>
